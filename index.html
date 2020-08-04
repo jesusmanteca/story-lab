@@ -4,18 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story Lab Chicago</title>
+    <!-- Linking next the css stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- adding a favicon to the tab -->
     <link rel="shortcut icon" type= "image/ico" href="./images/favicon_io/favicon.ico">
 </head>
 <body>
-   <!-- Navigation -->
-        <!-- Home -->
-        <!-- About Us-->
-        <!-- About You -->
-        <!-- Classes -->
-        <!-- Past Performers -->
-        <!-- FAQ -->
-        <!-- Contact Us -->
-   <!-- Heading -->
+
+    <!-- Navigation -->
+    <header>
+        <h1>
+            <a href="index.html">Story Lab Chicago</a> 
+        </h1>
+        <nav>
+            <!-- Unordered list element -->
+            <ul>
+                <!-- List item element-->
+                <li>
+                <!-- Anchor element -->
+                    <a href="#aboutUs">About Us</a>
+                </li>
+                <li>
+                    <a href="#aboutYou">About You</a>
+                </li>
+                <li>
+                    <a href="#classes">Classes</a>
+                </li>
+                <li>
+                    <a href="#pastPerformers">Past Performers</a>
+                </li>
+                <li>
+                   <a href="#faq">FAQ</a> 
+                </li>
+                <li>
+                    <a href="#contactUs">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
    <!-- Content -->
+   <!-- first section is the hero section, the main part of the storytelling -->
+    <section class="hero">
+        <!-- we'll put a form in here -->
+        <div class="hero-form">
+            <h3>
+                Start your storytelling adventure!
+            </h3>
+            <p>
+                Fill out this form to find out more
+            </p>
+            <!-- adding the form here -->
+            <form action="">
+                <!-- Name -->
+                <label for="name">
+                    Enter full name:
+                </label>
+                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+                <!-- Email -->
+                <label for="email">
+                    Enter Email Address
+                </label>
+                <input type="email" placeholder="Your Email Address" name="email" id="email" class="form-input">
+                <!-- Phone Number -->
+                <label for="phone">
+                    Enter Your Phone Number
+                </label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+
+                <!-- Quick survey -->
+                <p>
+                    Have you told a live story before?
+                    <input type="radio" name="storytelling-confirm" id="storytelling-yes" />
+                    <label for="trainer-yes">Yes 👍</label>
+                    <input type="radio" name="storytelling-confirm" id="storytelling-no" />
+                    <label for="trainer-no">No 👎</label>
+                </p>
+
+                <!-- Over 18 checkbox-->
+                <p>
+                    I acknowledgde that I am at least 18 years of age.
+                    <input type="checkbox" name="age-confirm" id="checkbox" />
+                </p>
+
+                <!-- sign up button -->
+                <button type="submit" id="submitButton">
+                    Let's do this!
+                </button>
+            </form>
+        </div>
+    </section>
+   <!-- Footer -->
+   <footer>
+       <h2>
+        ❤️ Made with love by Scott Whitehair
+       </h2>
+       <div>
+        &copy; 2020 Story Lab Chicago
+      </div>
+   </footer>
 </body>
 </html>

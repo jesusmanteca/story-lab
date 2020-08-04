@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height. */
+    box-sizing: border-box;
+}
+/* Applying styles to body */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #264653;
+  }
+/* Applying styles to header next */
+header {
+    padding: 20px 35px;
+    background-color: #264653;
+    width: 100%;
+}
+/* Applying style to the anchor */
+header nav ul li a {
+    color: #e9c46a;
+    margin: 0 30px;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+  /* adding a hover effect over the links */
+  a:hover {
+    color: #fff3a3;
+  }
+  /* moving the nav div which holds the list to the right and adding a little margin */
+  header nav {
+    float: right;
+    margin: 17px 10px;
+  }
+  /* putting the links of the nav in line, instead of stacked */
+  header nav ul li {
+    display: inline;
+  }
+  /* adjusting the main Story Lab header box */
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #e9c46a;
+    margin: 0;
+    display: inline;
+    text-decoration: none;
+  }
+/* adjusting the Story Lab anchor text */
+  header h1 a {
+    text-decoration: none;
+    color: #e9c46a;
+    font-weight: lighter;
+    font-size: 36px;
+    margin: 0;
+    display: inline;
+  }
+/* taking care of the footer */
+  footer {
+    background-color: #e9c46a;
+    width: 100%;
+    padding: 40px 35px;
+}
+/* the Made with love part */
+footer h2 {
+    display: inline;
+    color: #264653;
+    font-size: 30px;
+    margin: 0;
+  }
+/* the copyright part */
+  footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+
+/* putting a background picture for the hero part */
+.hero {
+    background-image: url("../images/microphone.jpg") ;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+
+  /* now, general rules for the hero form */
+  .hero-form {
+    color: #264653;
+    background-color: #e76f51;
+    width: 500px;
+    padding: 20px;
+    border: solid 3px #264653;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+  }
+  /* CTA h3 format */
+  .hero-form h3 {
+    font-size: 24px;
+    margin: 0px;
+    color: #264653;
+    font-weight: lighter;
+  }
+
+  .hero-form p {
+    margin: 5px 0 15px 0;
+    color: #e9c46a;
+  }
+
+  /* the fill in boxed stuff */
+  .form-input {
+    border: 1px solid #264653;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #264653;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+/* the actual labels format */
+  .hero-form label {
+    margin: 0px 5px;
+    color: #e9c46a;
+  }
+/* Let's do this button */
+  .hero-form button {
+    color: #e9c46a;
+    background-color: #264653;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+    /* Hero Style End */
+
+
+
+    /* Jungle green: 2A9D8F */
+    /* Japanese Indigo: 264653 */
+    /* Hansa Yellow: e9c46a */
+    /* Sandy brown: f4a261 */
+    /* Light red ochre: e76f51 */
