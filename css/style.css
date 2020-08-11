@@ -14,27 +14,38 @@ header {
     padding: 20px 35px;
     background-color: #264653;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-/* Applying style to the anchor */
-header nav ul li a {
-    color: #e9c46a;
-    margin: 0 30px;
-    text-decoration: none;
-    font-weight: lighter;
-    font-size: 18px;
-  }
+
   /* adding a hover effect over the links */
   a:hover {
     color: #fff3a3;
   }
   /* moving the nav div which holds the list to the right and adding a little margin */
   header nav {
-    float: right;
+
     margin: 17px 10px;
   }
-  /* putting the links of the nav in line, instead of stacked */
-  header nav ul li {
-    display: inline;
+
+  /* making the nav links into flexbox so that they can collapse more gracefully */
+
+  header nav ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      list-style: none;
+  }
+  /* Applying style to the anchor */
+header nav ul li a {
+    color: #e9c46a;
+    margin: 0 30px;
+    text-decoration: none;
+    font-weight: lighter;
+    /* By setting the next value,font-size, to 1.55vw, we're telling the browser that the font's size should be roughly 1.55% of the window's overall width.  */
+    font-size: 1.55vw;
   }
   /* adjusting the main Story Lab header box */
   header h1 {
@@ -42,7 +53,7 @@ header nav ul li a {
     font-size: 36px;
     color: #e9c46a;
     margin: 0;
-    display: inline;
+
     text-decoration: none;
   }
 /* adjusting the Story Lab anchor text */
@@ -59,17 +70,18 @@ header nav ul li a {
     background-color: #e9c46a;
     width: 100%;
     padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /* the Made with love part */
 footer h2 {
-    display: inline;
     color: #264653;
     font-size: 30px;
     margin: 0;
   }
 /* the copyright part */
   footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
@@ -77,11 +89,27 @@ footer h2 {
 
 /* putting a background picture for the hero part */
 .hero {
-    background-image: url("../images/microphone.jpg") ;
-    height: 600px;
+    background-image: url("../images/audience.jpeg");
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-CTA {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .hero-CTA h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #e9c46a;
   }
 
 
@@ -89,12 +117,10 @@ footer h2 {
   .hero-form {
     color: #264653;
     background-color: #e76f51;
-    width: 500px;
     padding: 20px;
     border: solid 3px #264653;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
   }
   /* CTA h3 format */
   .hero-form h3 {
